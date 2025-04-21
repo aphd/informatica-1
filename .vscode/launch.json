@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: 01_variables_and_built_in_functions",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/01_variables_and_built_in_functions.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: 02 if for",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/02_if_for.py",
+            "console": "integratedTerminal"
+        }
+    ]
+}
