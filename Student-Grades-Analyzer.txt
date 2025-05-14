@@ -1,0 +1,9 @@
+Write a Python program that:
+
+1) Asks the user to input the names and math scores of students.
+
+2) Computes the average score for each student.
+
+3) Identifies the student(s) with the highest average.
+
+4) Prints all averages and highlights the top performer(s).

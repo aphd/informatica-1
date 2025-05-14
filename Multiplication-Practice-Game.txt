@@ -1,0 +1,15 @@
+Write a Python program that helps users practice multiplication.
+
+The program should allow the user to:
+
+1) Generate a random multiplication question (e.g., 7 × 8)
+
+2) Let the user enter an answer
+
+3) Tell the user if the answer is correct or not
+
+4) Keep track of how many correct answers the user gives
+
+5) Exit the program when the user chooses
+
+Make sure the program uses functions and is easy to read.

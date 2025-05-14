@@ -1,0 +1,15 @@
+Write a Python program that fulfills the following requirements. 
+
+Create a program to manage a personal movie collection.
+
+The program must allow the user to:
+
+1) Add a new movie to the collection (with title, director, and year).
+
+2) Search for movies by director.
+
+3) Display all movies sorted by year.
+
+4) Export the movie list to a text file.
+
+5) Exit the program.

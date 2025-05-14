@@ -1,0 +1,15 @@
+Write a Python program that helps the user practice prime number identification.
+
+The program should:
+
+1) Randomly generate a number between 1 and 100.
+
+2) Ask the user if the number is prime (Yes/No).
+
+3) Check the user's answer and provide feedback.
+
+4) Keep track of how many questions the user got right.
+
+5) Exit when the user chooses.
+
+Use functions for clarity and organization.
