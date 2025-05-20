@@ -35,3 +35,4 @@ Given the decimal number \(16\) and its corresponding binary number in 8 bits \(
 
 **Final Answer**:  
 `11101111,11110000`
+
