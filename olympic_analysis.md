@@ -15,10 +15,14 @@ This file contains information about Olympic athletes, including their Name, Age
    - Compute the average age of athletes from a given country.  
    - Identify the athlete with the most total medals from a country.  
    - Determine which country has won the most gold medals overall.
+   - List all distinct sports represented in the dataset.
+   - Find the top athlete (most total medals) in a specific sport.
+   - Identify the athlete with the most gold medals in a given sport.
 
 3. **Provide a user menu that allows:**  
    - Selecting one of the above queries by entering a choice.  
    - Inputting the required country name when needed.  
+   - Viewing the list of all sports available in the dataset.
    - Exiting the program gracefully.
 
 ---
