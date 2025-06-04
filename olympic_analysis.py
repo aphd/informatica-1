@@ -1,26 +1,23 @@
 def load_data(filename="olympic_medals.csv"):
     data = []
-    try:
-        with open(filename, encoding='utf-8') as file:
-            lines = file.readlines()
-            headers = lines[0].strip().split(",")
-            for line in lines[1:]:
-                parts = line.strip().split(",")
-                if len(parts) != len(headers):
-                    continue
-                row = {}
-                for i in range(len(headers)):
-                    row[headers[i]] = parts[i]
-                try:
-                    row['Age'] = int(row['Age'])
-                    row['Gold Medal'] = int(row['Gold Medal'])
-                    row['Silver Medal'] = int(row['Silver Medal'])
-                    row['Bronze Medal'] = int(row['Bronze Medal'])
-                    data.append(row)
-                except ValueError:
-                    continue
-    except FileNotFoundError:
-        print("CSV file not found.")
+    file = open(filename, encoding='utf-8')
+    lines = file.readlines()
+    headers = lines[0].strip().split(",")
+    for line in lines[1:]:
+        parts = line.strip().split(",")
+        if len(parts) != len(headers):
+            continue
+        row = {}
+        for i in range(len(headers)):
+            row[headers[i]] = parts[i]
+        try:
+            row['Age'] = int(row['Age'])
+            row['Gold Medal'] = int(row['Gold Medal'])
+            row['Silver Medal'] = int(row['Silver Medal'])
+            row['Bronze Medal'] = int(row['Bronze Medal'])
+            data.append(row)
+        except ValueError:
+            continue
     return data
 
 def total_medals(data, country):
@@ -82,26 +79,36 @@ def show_menu():
 def get_user_choice():
     return input("Enter your choice (1-5): ").strip()
 
+def print_green(text):
+    GREEN = "\033[92m"
+    RESET = "\033[0m"
+    print(f"{GREEN}{text}{RESET}")
+
+def print_red(text):
+    RED = "\033[91m"
+    RESET = "\033[0m"
+    print(f"{RED}{text}{RESET}")
+
 def handle_choice(choice, data):
     if choice == "1":
         country = input("Enter country name: ")
-        print(f"Total medals for {country}: {total_medals(data, country)}")
+        print_green(f"Total medals for {country}: {total_medals(data, country)}")
     elif choice == "2":
         country = input("Enter country name: ")
         avg = average_age(data, country)
-        print(f"Average age of athletes from {country}: {avg if avg else 'No data'}")
+        print_green(f"Average age of athletes from {country}: {avg if avg else 'No data'}")
     elif choice == "3":
         country = input("Enter country name: ")
         name, medals = top_athlete(data, country)
         if name:
-            print(f"Top athlete from {country}: {name} ({medals} medals)")
+            print_green(f"Top athlete from {country}: {name} ({medals} medals)")
         else:
-            print("No data found.")
+            print_red("No data found.")
     elif choice == "4":
         country, golds = top_gold_country(data)
-        print(f"Country with most gold medals: {country} ({golds} gold medals)")
+        print_green(f"Country with most gold medals: {country} ({golds} gold medals)")
     elif choice == "5":
-        print("Exiting. Goodbye!")
+        print_red("Exiting. Goodbye!")
         return False
     else:
         print("Invalid choice.")
