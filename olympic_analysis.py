@@ -5,11 +5,12 @@ def load_data(filename="olympic_medals.csv"):
             lines = file.readlines()
             headers = lines[0].strip().split(",")
             for line in lines[1:]:
-                # Handle quoted names with commas
-                parts = parse_csv_line(line.strip())
+                parts = line.strip().split(",")
                 if len(parts) != len(headers):
                     continue
-                row = dict(zip(headers, parts))
+                row = {}
+                for i in range(len(headers)):
+                    row[headers[i]] = parts[i]
                 try:
                     row['Age'] = int(row['Age'])
                     row['Gold Medal'] = int(row['Gold Medal'])
@@ -21,23 +22,6 @@ def load_data(filename="olympic_medals.csv"):
     except FileNotFoundError:
         print("CSV file not found.")
     return data
-
-def parse_csv_line(line):
-    result = []
-    in_quotes = False
-    value = ""
-    for c in line:
-        if c == '"' and not in_quotes:
-            in_quotes = True
-        elif c == '"' and in_quotes:
-            in_quotes = False
-        elif c == ',' and not in_quotes:
-            result.append(value.strip())
-            value = ""
-        else:
-            value += c
-    result.append(value.strip())
-    return result
 
 def total_medals(data, country):
     total = 0
