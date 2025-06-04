@@ -14,6 +14,13 @@
             "request": "launch",
             "program": "${workspaceFolder}/02_if_for.py",
             "console": "integratedTerminal"
-        }
+        },
+        {
+            "name": "Python: olympic_analysis",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/olympic_analysis.py",
+            "console": "integratedTerminal"
+        },
     ]
 }
