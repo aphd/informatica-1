@@ -1,23 +1,21 @@
-def load_data(filename="olympic_medals.csv"):
+def load_data(filename="olympic_analysis.csv"):
     data = []
     file = open(filename, encoding='utf-8')
     lines = file.readlines()
     headers = lines[0].strip().split(",")
     for line in lines[1:]:
-        parts = line.strip().split(",")
-        if len(parts) != len(headers):
-            continue
+        cols = line.strip().split(",")
         row = {}
         for i in range(len(headers)):
-            row[headers[i]] = parts[i]
-        try:
-            row['Age'] = int(row['Age'])
-            row['Gold Medal'] = int(row['Gold Medal'])
-            row['Silver Medal'] = int(row['Silver Medal'])
-            row['Bronze Medal'] = int(row['Bronze Medal'])
-            data.append(row)
-        except ValueError:
-            continue
+            row[headers[i]] = cols[i]
+        row['Age'] = int(row['Age'])
+        row['Country'] = row['Country']
+        row['Gold Medal'] = int(row['Gold Medal'])
+        row['Silver Medal'] = int(row['Silver Medal'])
+        row['Bronze Medal'] = int(row['Bronze Medal'])
+
+        data.append(row)
+
     return data
 
 def total_medals(data, country):
