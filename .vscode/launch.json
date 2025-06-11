@@ -2,6 +2,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "nobel prize",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/nobel-prize.py",
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Python: 01_variables_and_built_in_functions",
             "type": "python",
             "request": "launch",
@@ -21,6 +28,6 @@
             "request": "launch",
             "program": "${workspaceFolder}/olympic_analysis.py",
             "console": "integratedTerminal"
-        },
+        }
     ]
 }
