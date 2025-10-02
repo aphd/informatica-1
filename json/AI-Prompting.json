@@ -1,0 +1,121 @@
+{
+    "title": "AI-Prompting for Dataset Analysis - Test",
+    "description": "Test your understanding of using AI to write Python programs and interpret dataset results for tourism, vacations, or medical research.",
+    "questions": [
+        {
+            "question": "Which component is mandatory when prompting an AI to write Python code for dataset analysis?",
+            "options": ["Task", "Tone", "Persona", "Exemplars"],
+            "answer": "Task"
+        },
+        {
+            "question": "What is the main purpose of the Context component?",
+            "options": [
+                "To provide relevant details like dataset type, variables, and purpose of analysis",
+                "To specify the output format only",
+                "To define the AI's persona",
+                "To write the code itself"
+            ],
+            "answer": "To provide relevant details like dataset type, variables, and purpose of analysis"
+        },
+        {
+            "question": "Which of the following is an example of a Task for Python code generation?",
+            "options": [
+                "Write a Python program to compute average stay per region and year from a tourism dataset",
+                "Comment on the results of the analysis",
+                "Summarize the Discussion section",
+                "Specify the tone of the report"
+            ],
+            "answer": "Write a Python program to compute average stay per region and year from a tourism dataset"
+        },
+        {
+            "question": "What does the Exemplars component help the AI do?",
+            "options": [
+                "Provide sample code or report structure to guide AI output",
+                "Decide the tone of writing",
+                "Choose the AI persona",
+                "Define the task"
+            ],
+            "answer": "Provide sample code or report structure to guide AI output"
+        },
+        {
+            "question": "What is the recommended Format for the AI to generate Python code for analysis?",
+            "options": [
+                "Clean, executable code with comments",
+                "Long paragraphs describing trends",
+                "Formal discussion text only",
+                "Bullet points without code"
+            ],
+            "answer": "Clean, executable code with comments"
+        },
+        {
+            "question": "How should the Tone be specified for scientific commentary?",
+            "options": [
+                "Formal, precise, objective, and concise",
+                "Casual and humorous",
+                "Friendly and motivational",
+                "Informal and descriptive"
+            ],
+            "answer": "Formal, precise, objective, and concise"
+        },
+        {
+            "question": "After generating Python code for dataset analysis, what is the next recommended step?",
+            "options": [
+                "Use AI to write a report section interpreting the output, highlighting trends and anomalies",
+                "Run the Python code on a different dataset and compare results",
+                "Document the Python code only without discussing results",
+                "Write a general discussion section without referencing the analysis"
+            ],
+            "answer": "Use AI to write a report section interpreting the output, highlighting trends and anomalies"
+        },
+        {
+            "question": "I want to analyze a CSV dataset of hotel bookings. Which prompt is most effective?",
+            "options": [
+                "Write Python code to load the CSV, summarize key statistics, and visualize trends.",
+                "Write Python code to load the CSV and print the first 5 rows.",
+                "Write Python code to load the CSV, compute average stay per region and year, and generate plots for length_of_stay, region, and year columns.",
+                "Write Python code to describe the CSV structure."
+            ],
+            "answer": "Write Python code to load the CSV, compute average stay per region and year, and generate plots for length_of_stay, region, and year columns."
+        },
+        {
+            "question": "You have a medical dataset with columns: patient_id, hospital, recovery_days, and treatment_type. Which prompt would best generate Python analysis?",
+            "options": [
+                "Generate Python code to read the CSV and plot recovery trends.",
+                "Generate Python code to read the CSV, calculate mean recovery_days per hospital and treatment_type, and visualize the results.",
+                "Generate Python code to summarize all columns with general statistics.",
+                "Generate Python code to clean the CSV without further analysis."
+            ],
+            "answer": "Generate Python code to read the CSV, calculate mean recovery_days per hospital and treatment_type, and visualize the results."
+        },
+        {
+            "question": "You want AI to write both code and a Results section from a tourism dataset with columns: city, year, visitors, and revenue. Which prompt is best?",
+            "options": [
+                "Write Python code to compute average visitors per city and year, then write a Results section interpreting trends in visitors and revenue.",
+                "Write Python code to print the dataset, then write a Results section on visitor trends.",
+                "Write Python code to analyze revenue only, then write a Results section summarizing revenue.",
+                "Write Python code to load the CSV without any visualization, then write a Results section."
+            ],
+            "answer": "Write Python code to compute average visitors per city and year, then write a Results section interpreting trends in visitors and revenue."
+        },
+        {
+            "question": "Which prompt is most precise for analyzing hotel booking data with columns: region, check_in_date, length_of_stay, and guest_age?",
+            "options": [
+                "Write Python code to compute average length_of_stay by region and guest_age group and visualize the results.",
+                "Write Python code to summarize all columns with general statistics.",
+                "Write Python code to compute average length_of_stay by region only.",
+                "Write Python code to load CSV and print the first 10 rows."
+            ],
+            "answer": "Write Python code to compute average length_of_stay by region and guest_age group and visualize the results."
+        },
+        {
+            "question": "You have a dataset of vaccinations with columns: country, year, vaccine_type, and coverage_rate. Which prompt will guide AI to produce the most useful analysis?",
+            "options": [
+                "Write Python code to summarize the dataset and plot coverage_rate per country.",
+                "Write Python code to calculate average coverage_rate by country and vaccine_type, and generate plots showing trends over years.",
+                "Write Python code to load CSV and describe columns only.",
+                "Write Python code to filter vaccine_type and print the first 5 rows."
+            ],
+            "answer": "Write Python code to calculate average coverage_rate by country and vaccine_type, and generate plots showing trends over years."
+        }
+    ]
+}
