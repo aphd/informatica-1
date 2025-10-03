@@ -1,39 +1,39 @@
 {
-    "title": "AI-Prompting for Dataset Analysis - Test",
+    "title": "AI-Prompting - Test",
     "description": "Test your understanding of using AI to write Python programs and interpret dataset results for tourism, vacations, or medical research.",
     "questions": [
         {
-            "question": "Which component is mandatory when prompting an AI to write Python code for dataset analysis?",
+            "question": "Which component is mandatory when prompting an AI to write Python code?",
             "options": ["Task", "Tone", "Persona", "Exemplars"],
             "answer": "Task"
         },
         {
-            "question": "What is the main purpose of the Context component?",
+            "question": "What is the main purpose of providing context in AI prompting?",
             "options": [
-                "To provide relevant details like dataset type, variables, and purpose of analysis",
-                "To specify the output format only",
-                "To define the AI's persona",
-                "To write the code itself"
+                "To give the AI relevant information that guides its responses",
+                "To define the AI's behavior or style of response",
+                "To specify exactly what the AI should output",
+                "To provide optional background that may or may not influence the AI"
             ],
-            "answer": "To provide relevant details like dataset type, variables, and purpose of analysis"
+            "answer": "To give the AI relevant information that guides its responses"
         },
         {
             "question": "Which of the following is an example of a Task for Python code generation?",
             "options": [
+                "Implement a function to summarize numerical data from a dataset",
+                "Generate visualizations for dataset insights",
                 "Write a Python program to compute average stay per region and year from a tourism dataset",
-                "Comment on the results of the analysis",
-                "Summarize the Discussion section",
-                "Specify the tone of the report"
+                "Create code snippets to clean and preprocess data"
             ],
             "answer": "Write a Python program to compute average stay per region and year from a tourism dataset"
         },
         {
             "question": "What does the Exemplars component help the AI do?",
             "options": [
-                "Provide sample code or report structure to guide AI output",
                 "Decide the tone of writing",
                 "Choose the AI persona",
-                "Define the task"
+                "Define the task",
+                "Provide sample code or report structure to guide AI output"
             ],
             "answer": "Provide sample code or report structure to guide AI output"
         },
@@ -58,15 +58,15 @@
             "answer": "Formal, precise, objective, and concise"
         },
         {
-            "question": "After generating Python code for dataset analysis, what is the next recommended step?",
+            "question": "After generating Python code and running it to obtain the results, what is the next recommended step?",
             "options": [
                 "Use AI to write a report section interpreting the output, highlighting trends and anomalies",
-                "Run the Python code on a different dataset and compare results",
-                "Document the Python code only without discussing results",
-                "Write a general discussion section without referencing the analysis"
+                "Directly create visualizations without interpreting the results",
+                "Summarize results in the report without referencing the code output",
+                "Only document the Python code without discussing the results"
             ],
             "answer": "Use AI to write a report section interpreting the output, highlighting trends and anomalies"
-        },
+        },        
         {
             "question": "I want to analyze a CSV dataset of hotel bookings. Which prompt is most effective?",
             "options": [
